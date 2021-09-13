@@ -1,13 +1,12 @@
-shownum(10);
+const number = arrayrange(10,4);
+console.log(number);
 
 
-function shownum(limit)
-{
+function arrayrange(min,max){
 
-    for( let i=1; i <= limit; i++)
-    {
- 
-if (i%2==0 ) console.log(i,'its even');
-else console.log(i,' its odd');
-    }
+     const output = []      ;
+     for(let i = min; i<=max;i++)
+     output.push(i);
+     return output;
+
 }
